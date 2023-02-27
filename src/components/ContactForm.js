@@ -1,13 +1,13 @@
-import { Button, Label, Col, FormGroup } from "reactstrap"
-import { Formik, Field, Form, ErrorMessage } from "formik"
-import { validateContactForm } from "../utils/validateContactForm"
+import { Button, Label, Col, FormGroup } from "reactstrap";
+import { Formik, Field, Form, ErrorMessage } from "formik";
+import { validateContactForm } from "../utils/validateContactForm";
 
 const ContactForm = () => {
     const handleSubmit = (values, { resetForm }) => {
-        console.log('form values:', values)
-        console.log('in JSON form', JSON.stringify(values))
-        resetForm()
-    }
+        console.log('form values:', values);
+        console.log('in JSON form', JSON.stringify(values));
+        resetForm();
+    };
     return (
         <Formik initialValues={{
             firstName: '',
@@ -92,7 +92,7 @@ const ContactForm = () => {
                 </FormGroup>
             </Form>
         </Formik>
-    )
-}
+    );
+};
 
-export default ContactForm
+export default ContactForm;
